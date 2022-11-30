@@ -59,7 +59,7 @@ let person2 = {}
     person2 = Object.assign(person2,person);
     person2.emailAddress = "hahaha@hotmail.com",
 
-console.log(person2)
+console.log(person2.emailAddress !== person.emailAddress)
 
 /* EXERCISE 6
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
@@ -70,9 +70,9 @@ console.log(person2)
 let totalShoppingCart= 49;
 
 if (totalShoppingCart >= 50) {
-    console.log ("Free Shipping")
+    console.log ("Free Shipping... Total Cost: $" , totalShoppingCart)
 } else {
-    console.log ("The shipping fees will be $10...")
+    console.log ("The shipping fees will be $10... Total Cost: $"  + (totalShoppingCart + 10) )
 }
 
 
@@ -158,10 +158,7 @@ console.log(typeof car.licensePlate)
  
 let carsForSale = [];
 
-carsForSale.push ("BMW")
-carsForSale.push ("Toyota")
-carsForSale.push ("Lexus")
-
+carsForSale.push ("BMW","Toyota","Lexus")
 console.log(carsForSale)
 
 let totalCars = (carsForSale.length + carForRent.length)
