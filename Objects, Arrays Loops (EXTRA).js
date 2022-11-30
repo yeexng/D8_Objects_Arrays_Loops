@@ -7,8 +7,8 @@
 */
 
 let numbers = [1,2,3,4,5,18,19]
-reversedNumbers = numbers.reverse ();
-console.log("Reversed:" + reversedNumbers)
+numbers.reverse ();
+console.log(numbers)
 
 /* EXTRA 2
  Write a piece of code for getting the maximum numerical value from an array.
